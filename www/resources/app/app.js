@@ -2357,7 +2357,7 @@ const app = new Framework7({
             <div class="list no-hairlines margin-top-half no-margin-bottom">
                 <ul>
                     <li>
-                        <label class="item-checkbox item-content color-green no-padding-left">
+                        <label class="item-checkbox item-content color-custom no-padding-left">
                             <input type="checkbox" name="checkbox-not-show-modal-review" value="" />
                             <i class="icon icon-checkbox"></i>
                             <div class="item-inner no-padding-right">

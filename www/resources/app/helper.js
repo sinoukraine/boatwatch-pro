@@ -1018,8 +1018,8 @@ let Protocol = {
                 if(mapSettingsObg.map === 'openstreet') layersToShow.push(osm);
             }
             if(!layersToShow.length) layersToShow.push(googleStreets);
-            if(mapSettingsObg.seamark) layersToShow.push(layerSeaMark);
-            if(mapSettingsObg.grid) layersToShow.push(layerGrid2);
+            if(app.methods.isObjEmpty(mapSettingsObg) || mapSettingsObg.seamark) layersToShow.push(layerSeaMark);
+            if(app.methods.isObjEmpty(mapSettingsObg) || mapSettingsObg.grid) layersToShow.push(layerGrid2);
 
             let map = L.map(option.target, {
                 zoomControl: false,
