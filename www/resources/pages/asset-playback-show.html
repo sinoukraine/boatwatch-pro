@@ -164,7 +164,7 @@
                         <ul>
                             {{#each '12'}}
                             <li class="item-content skeleton-text skeleton-effect-blink">
-                                <div class="item-media text-color-green align-self-flex-start"><div class="skeleton-block" style="width: 25px; height: 25px;"></div></div>
+                                <div class="item-media text-color-custom align-self-flex-start"><div class="skeleton-block" style="width: 25px; height: 25px;"></div></div>
                                 <div class="item-inner flex-direction-column align-items-stretch">
                                     <div class="item-title only-2-rows">
                                         <div class="item-header text-color-gray">
@@ -205,7 +205,7 @@
                             {{#TripList}}
                             <li data-item-index="">
                                 <a @click="showStartTripPosition({{@index}})" href="#" class="item-content item-link">
-                                    <div class="item-media text-color-green align-self-flex-start"><i class="f7-icons icon-live-trip"></i></div>
+                                    <div class="item-media text-color-custom align-self-flex-start"><i class="f7-icons icon-live-trip"></i></div>
                                     <div class="item-inner flex-direction-column align-items-stretch">
                                         <div class="item-title only-2-rows size-14">
                                             <div class="item-header text-color-gray">
@@ -533,13 +533,13 @@
                                             <div class="list no-margin no-hairlines no-hairlines-between">
                                                 <ul>
                                                     <li class="item-content changeGeofenceState sheet-close">
-                                                        <div class="item-media ${ mapSettingsObg && mapSettingsObg.showGeofences ?  'text-color-green' : 'text-color-lightgray'} ">
+                                                        <div class="item-media ${ mapSettingsObg && mapSettingsObg.showGeofences ?  'text-color-custom' : 'text-color-lightgray'} ">
                                                             <i class="f7-icons icon-menu-geofence "></i>
                                                         </div>
                                                         <div class="item-inner">
                                                             <div class="item-title ">${ LANGUAGE.COM_MSG062 }</div>
                                                             <div class="item-after">
-                                                                <div class="toggle color-green">
+                                                                <div class="toggle color-custom">
                                                                     <input type="checkbox" name="checkbox-map-settings" value="showGeofences" ${ mapSettingsObg && mapSettingsObg.showGeofences ?  'checked' : '' }>
                                                                     <span class="toggle-icon"></span>
                                                                 </div>
@@ -547,13 +547,13 @@
                                                         </div>
                                                     </li>
                                                     <li class="item-content changeOptimizedRouteState sheet-close">
-                                                        <div class="item-media ${ self.OptimizedRouteState ?  'text-color-green' : 'text-color-lightgray'} ">
+                                                        <div class="item-media ${ self.OptimizedRouteState ?  'text-color-custom' : 'text-color-lightgray'} ">
                                                             <i class="f7-icons icon-live-trip "></i>
                                                         </div>
                                                         <div class="item-inner">
                                                             <div class="item-title ">${ LANGUAGE.ASSET_PLAYBACK_MSG01 }</div>
                                                             <div class="item-after">
-                                                                <div class="toggle color-green">
+                                                                <div class="toggle color-custom">
                                                                     <input type="checkbox" name="checkbox-optimized-route" value="" ${ self.OptimizedRouteState ?  'checked' : '' }>
                                                                     <span class="toggle-icon"></span>
                                                                 </div>
@@ -640,7 +640,7 @@
                                 el: SmartSelectEventsEl,
                                 view: mainView,
                                 openIn: 'popover',
-                                formColorTheme: 'green',
+                                formColorTheme: 'custom',
                                 on: {
                                     change: function (smartSelect, val) {
                                         for (var i = self.PlaybackFilterEventsList.length - 1; i >= 0; i--) {
@@ -1104,18 +1104,18 @@
                         Name: LANGUAGE.ASSET_PLAYBACK_MSG17,
                         Value: totals.Fuel ? totals.Fuel +' '+ LANGUAGE.COM_MSG082 : LANGUAGE.COM_MSG083,
                     },
-                    {
-                        Icon: 'icon-live-model',
+                    /*{
+                        Icon: 'icon-boat-icon',
                         Name: LANGUAGE.ASSET_EDIT_MSG04,
                         Value: self.Registration ? self.Registration : LANGUAGE.COM_MSG083,
-                    },
+                    },*/
                     {
-                        Icon: 'icon-live-model',
+                        Icon: 'icon-boat-icon',
                         Name: LANGUAGE.ASSET_EDIT_MSG05,
                         Value: self.Make ? self.Make : LANGUAGE.COM_MSG083,
                     },
                     {
-                        Icon: 'icon-live-model',
+                        Icon: 'icon-boat-icon',
                         Name: LANGUAGE.ASSET_EDIT_MSG06,
                         Value: self.Model ? self.Model : LANGUAGE.COM_MSG083,
                     },
@@ -1222,7 +1222,7 @@
                                     el: SmartSelectEl,
                                     view: mainView,
                                     openIn: 'popup',
-                                    formColorTheme: 'green',
+                                    formColorTheme: 'custom',
                                     searchbar: true,
                                     searchbarPlaceholder: LANGUAGE.COM_MSG002,
                                     appendSearchbarNotFound: LANGUAGE.PROMPT_MSG000,
@@ -1334,13 +1334,13 @@
                         break;
                     case 2:
                         ret = {
-                            Icon: Protocol.MarkerIcon[5],
+                            Icon: Protocol.MarkerIcon[13],
                             CustomFilterType: '1'
                         };
                         break;
                     case 4:
                         ret = {
-                            Icon: Protocol.MarkerIcon[7],
+                            Icon: Protocol.MarkerIcon[16],
                             CustomFilterType: '2'
                         };
                         break;

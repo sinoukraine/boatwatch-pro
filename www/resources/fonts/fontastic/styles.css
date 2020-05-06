@@ -368,3 +368,9 @@
 .icon-menu-manual:before {
   content: "\e00f";
 }
+.icon-boat-icon:before {
+  content: "\e010";
+}
+.icon-acc:before {
+  content: "\e011";
+}

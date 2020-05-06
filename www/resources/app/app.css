@@ -73,7 +73,7 @@
     min-width: 25px;
 }
 /*.color-theme-custom {
-    --f7-theme-color: #E3072B;
+    --f7-theme-color: #3FA7B1;
     --f7-theme-color-rgb: 227,7,43;
     --f7-theme-color-shade: #92051b;
     --f7-theme-color-tint: #e4082a;
@@ -111,10 +111,10 @@
 }
 
 .bg-color-custom{
-    background-color: #E3072B!important;
+    background-color: #3FA7B1!important;
 }
 .text-color-custom{
-    color: #E3072B!important;
+    color: #3FA7B1!important;
 }
 .position-relative{
     position: relative;
@@ -126,7 +126,7 @@
     user-select: none
 }
 /*.color-theme-custom .navbar{
-    background: #E3072B;
+    background: #3FA7B1;
 }*/
 .toolbar-bottom.toolbar-size-3.toolbar-size-4{
     height: calc(var(--f7-toolbar-height)*2 + var(--f7-safe-area-bottom));
@@ -154,10 +154,10 @@
     --f7-page-toolbar-bottom-offset: calc(var(--f7-toolbar-height)*2);
 }
 .color-custom {
-    --f7-theme-color: #E3072B;
-    --f7-theme-color-rgb: 227,7,43;
-    --f7-theme-color-shade: #b60622;
-    --f7-theme-color-tint: #f82c4d;
+    --f7-theme-color: #3FA7B1;
+    --f7-theme-color-rgb: 63,167,177;
+    --f7-theme-color-shade: #32868e;
+    --f7-theme-color-tint: #64bfc8;
 }
 
 .color-darkgray {
@@ -186,7 +186,7 @@
     --f7-theme-color-tint: #09c3ff;
 }
 .color-watch{
-    --f7-theme-color: #E3072B;
+    --f7-theme-color: #3FA7B1;
     --f7-theme-color-rgb: 227,7,43;
     --f7-theme-color-shade: #b60622;
     --f7-theme-color-tint: #f82c4d;
@@ -314,6 +314,9 @@
 }
 .overflow-visible{
     overflow: visible!important;
+}
+.font-weight-bold{
+    font-weight: bold;
 }
 .only-2-rows{
     overflow: hidden;
@@ -479,7 +482,7 @@
 /*PANEL LEFT*/
 
 .bg-header{
-    background-image: url('../images/bg.png');
+    background-image: url('../images/menu-bg.png');
     background-repeat: no-repeat;
     background-position: top right;
     background-size: cover;

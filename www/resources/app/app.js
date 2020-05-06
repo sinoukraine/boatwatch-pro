@@ -51,7 +51,7 @@ API_URL.URL_SUPPORT = "https://support.quiktrak.eu/";
 API_URL.URL_REPORT_THEFT = "https://forms.quiktrak.com.au/report-theft/";
 API_URL.URL_UPGRADE = "https://app.quikprotect.co/activation2/";
 API_URL.REFERRAL_PROGRAM = "https://forms.quiktrak.com.au/referral-program/";
-API_URL.URL_USER_GUIDE = "https://quiktrak.com.au/pdf/manuals/qt-pro-app.pdf";
+API_URL.URL_USER_GUIDE = "https://quiktrak.com.au/pdf/manuals/bw-pro-app.pdf";
 
 API_URL.GET_BALANCE = API_DOMIAN3 + "Balance";
 API_URL.EDIT_ACCOUNT = API_DOMIAN3 + "AccountEdit";
@@ -103,8 +103,8 @@ $$('#app').append(compiledTemplate());
 
 // Init App
 const app = new Framework7({
-    id: 'com.quiktrak.pro',
-    name: 'QuikTrak Pro',
+    id: 'com.boatwatch.pro',
+    name: 'BoatWatch Pro',
     root: '#app',
     theme: Framework7.device.ios ? 'ios' : 'md',
     view: {
@@ -353,7 +353,7 @@ const app = new Framework7({
                     localStorage.PUSH_DEVICE_TOKEN = uid;
                 //localStorage.PUSH_DEVICE_TOKEN = "75ba1639-92ae-0c4c-d423-4fad1e48a49d"
                 localStorage.PUSH_APPID_ID = 'android.app.quiktrak.eu.quiktrak.new';
-                localStorage.DEVICE_TYPE = self.device.ios ? 'iOS' : 'android';
+                localStorage.DEVICE_TYPE = "android.app.quiktrak.eu.quiktrak.new";
             }
         },
         clearUserInfo: function(unregisterPush){
@@ -442,7 +442,7 @@ const app = new Framework7({
                 deviceType: localStorage.DEVICE_TYPE,
             };
 
-            self.dialog.progress(LANGUAGE.COM_MSG004,'red');
+            self.dialog.progress(LANGUAGE.COM_MSG004,'custom');
             self.request.promise.get(API_URL.LOGIN, data, 'json')
                 .then(function (result) {
                     if(result.data && result.data.MajorCode === '000') {
@@ -2184,7 +2184,7 @@ const app = new Framework7({
                     break;
 
                 case 2:     // ACC
-                    point.Icon = 'icon-live-acc';
+                    point.Icon = 'icon-acc';
                     if (point.eventType === 0) {
                         //point.IconBg = 'bg-color-gray';
                         point.EventName = LANGUAGE.ASSET_ALARM_MSG10;
@@ -2197,7 +2197,7 @@ const app = new Framework7({
                     break;
 
                 case 4:     // ACTIVE
-                    point.Icon = 'icon-live-model';
+                    point.Icon = 'icon-boat-icon';
                     point.Duration = Protocol.Helper.getDifferenceBTtwoDates(point.beginTime,point.endTime);
                     point.Duration = moment.duration(point.Duration, "milliseconds").format('d[d] h[h] m[m] s[s]');
                     if (point.eventType === 0) {

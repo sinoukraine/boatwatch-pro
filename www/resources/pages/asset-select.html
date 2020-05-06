@@ -70,7 +70,7 @@
                             <div class="item-inner">
                                 <div class="item-title text-transform-uppercase">{{@global.LANGUAGE.COM_MSG093}}</div>
                                 <div class="item-after">
-                                    <label class="toggle toggle-all-assets color-green">
+                                    <label class="toggle toggle-all-assets color-custom">
                                         <input type="checkbox" name="checkbox-assets-all">
                                         <span class="toggle-icon"></span>
                                     </label>
@@ -233,7 +233,7 @@
 
                         if (self.Type === 'multiple') {
                             ret =  `<li data-index="${ index }" title="${ item.Name }" >
-                                            <label class="item-checkbox item-content color-green ">
+                                            <label class="item-checkbox item-content color-custom ">
                                                 <input type="checkbox" name="checkbox-asset" value="" data-imei="${ item.IMEI }" ${ item.Selected ? 'checked="true"' : '' } >
                                                 <div class="item-media">${ assetImg }</div>
                                                 <div class="item-inner">
@@ -248,7 +248,7 @@
                                         </li>`;
                         }else{
                             ret =  `<li data-index="${ index }" title="${ item.Name }" >
-                                        <label class="item-radio item-content color-green ">
+                                        <label class="item-radio item-content color-custom ">
                                             <input type="radio" name="checkbox-asset" value="" data-imei="${ item.IMEI }"  />
                                             <div class="item-media">${ assetImg }</div>
                                             <div class="item-inner">

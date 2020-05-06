@@ -45,7 +45,7 @@
                             </select>
                             <div class="item-content item-input">
                                 <div class="item-media text-color-lightgray">
-                                    <i class="f7-icons icon-asset-name"></i>
+                                    <i class="f7-icons icon-boat-icon"></i>
                                 </div>
                                 <div class="item-inner">
                                     <div class="item-title item-label ">{{@global.LANGUAGE.GEOFENCES_MSG02}}</div>
@@ -129,7 +129,7 @@
                         <div class="item-inner">
                             <div class="item-title text-transform-uppercase tooltip-init" data-tooltip="{{@global.LANGUAGE.PROMPT_MSG046}}">{{@global.LANGUAGE.COM_MSG051}} <span class="badge color-lightblue">?</span></div>
                             <div class="item-after">
-                                <label class="toggle toggle-ignore-between color-green">
+                                <label class="toggle toggle-ignore-between color-custom">
                                     <input type="checkbox" name="IgnoreBetweenState" {{#if IgnoreBetweenState}}checked="checked"{{/if}}>
                                     <span class="toggle-icon"></span>
                                 </label>
@@ -185,7 +185,7 @@
                         <div class="item-inner">
                             <div class="item-title text-transform-uppercase tooltip-init" data-tooltip="{{@global.LANGUAGE.PROMPT_MSG045}}">{{@global.LANGUAGE.GEOFENCES_MSG08}} <span class="badge color-lightblue">?</span></div>
                             <div class="item-after">
-                                <label class="toggle toggle-ignore-between color-green">
+                                <label class="toggle toggle-ignore-between color-custom">
                                     <input type="checkbox" name="ShareState" {{#if ShareState}}checked="checked"{{/if}}>
                                     <span class="toggle-icon"></span>
                                 </label>
@@ -196,7 +196,7 @@
                         <div class="item-inner">
                             <div class="item-title text-transform-uppercase tooltip-init" data-tooltip="{{@global.LANGUAGE.PROMPT_MSG047}}">{{@global.LANGUAGE.GEOFENCES_MSG09}} <span class="badge color-lightblue">?</span></div>
                             <div class="item-after">
-                                <label class="toggle toggle-ignore-between color-green">
+                                <label class="toggle toggle-ignore-between color-custom">
                                     <input type="checkbox" name="ActiveState" {{#if ActiveState}}checked="checked"{{/if}}>
                                     <span class="toggle-icon"></span>
                                 </label>
@@ -424,7 +424,8 @@
                     boundsArr.push(this.GeofenceFiguresGroup.getBounds())
                 }
                 if(boundsArr.length){
-                    this.Map.flyToBounds(boundsArr, { padding: [8, 8], maxZoom: 15 });
+                    //this.Map.flyToBounds(boundsArr, { padding: [8, 8], maxZoom: 15 });
+                    this.Map.fitBounds(boundsArr, { padding: [8, 8], maxZoom: 15 });
                 }
             },
             saveGeofence: function(data, url){

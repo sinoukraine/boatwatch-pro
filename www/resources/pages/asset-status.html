@@ -81,7 +81,7 @@
                         <div class="item-inner">
                             <div class="item-title tooltip-init" data-trigger="click" data-tooltip="{{@global.LANGUAGE.PROMPT_MSG004}}">{{@global.LANGUAGE.ASSET_STATUS_LIVE_MSG04}}  <span class="badge color-lightblue">?</span></div>
                             <div class="item-after">
-                                <label class="toggle color-green toggle-Geolock">
+                                <label class="toggle color-custom toggle-Geolock">
                                     <input type="checkbox" name="Geolock" {{#if Geolock}} checked {{/if}}>
                                     <span class="toggle-icon"></span>
                                 </label>
@@ -96,7 +96,7 @@
                         <div class="item-inner">
                             <div class="item-title tooltip-init" data-trigger="click" data-tooltip="{{@global.LANGUAGE.PROMPT_MSG005}}">{{@global.LANGUAGE.ASSET_STATUS_LIVE_MSG05}}  <span class="badge color-lightblue">?</span></div>
                             <div class="item-after">
-                                <label class="toggle color-green toggle-Immobilisation">
+                                <label class="toggle color-custom toggle-Immobilisation">
                                     <input type="checkbox" name="Immobilise" {{#if Immobilise}} checked {{/if}}>
                                     <span class="toggle-icon"></span>
                                 </label>
@@ -112,7 +112,7 @@
                         <div class="item-inner">
                             <div class="item-title tooltip-init" data-trigger="click" data-tooltip="{{@global.LANGUAGE.PROMPT_MSG006}}">{{@global.LANGUAGE.ASSET_STATUS_LIVE_MSG06}}  <span class="badge color-lightblue">?</span></div>
                             <div class="item-after">
-                                <label class="toggle color-green toggle-LockDoor">
+                                <label class="toggle color-custom toggle-LockDoor">
                                     <input type="checkbox" name="LockDoor" {{#if LockDoor}} checked {{/if}}>
                                     <span class="toggle-icon"></span>
                                 </label>
@@ -142,7 +142,7 @@
                     {{#if Acc}}
                     <li class="item-content col-50 tooltip-init" data-trigger="click" data-tooltip="{{@global.LANGUAGE.PROMPT_MSG007}}">
                         <div class="item-media {{#js_if 'this.Acc === "ON" '}} text-color-green {{else}} text-color-red {{/js_if}}">
-                            <i class="f7-icons icon-status-acc2"></i>
+                            <i class="f7-icons icon-acc"></i>
                         </div>
                         <div class="item-inner">
                             <div class="item-title">{{Acc}}</div>

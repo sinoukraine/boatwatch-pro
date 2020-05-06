@@ -29,8 +29,8 @@
                         <div class="logo">
                             <img src="{{Logo}}" alt="">
                         </div>
-                        <p class="text-color-white no-margin-bottom">{{FirstName}} {{LastName}}</p>
-                        <p class="text-color-white no-margin">{{Email}}</p>
+                        <p class="font-weight-bold no-margin-bottom">{{FirstName}} {{LastName}}</p>
+                        <p class="font-weight-bold no-margin">{{Email}}</p>
                     </div>
                 </div>
                 <div class="list no-hairlines no-hairlines-between no-chevron margin-top-half">
@@ -163,7 +163,7 @@
             }
 
             let ret = {
-                Logo: self.$root.logo,
+                Logo: self.$root.logoBlack,
                 FirstName: userInfo && userInfo.FirstName ? userInfo.FirstName : 'User',
                 LastName: userInfo && userInfo.SurName ? userInfo.SurName : 'Name',
                 Email: userInfo && userInfo.Email ? userInfo.Email : 'test@mail.com',

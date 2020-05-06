@@ -32,10 +32,46 @@
               "client_type": 3
             },
             {
-              "client_id": "1097482483564-q407rsdtjepbrf3lm6a8qic0cobcqsl5.apps.googleusercontent.com",
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.sinopacific.witigps"
+                "bundle_id": "com.sinopacific.vici"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097482483564:android:b699800f0d2513318d2549",
+        "android_client_info": {
+          "package_name": "com.boatwatch.pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097482483564-mt5mtgj811opr3rgev6si0ci7079rvsd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhjlBAHlTG35_oOSom77Oci0LMJsgoEZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097482483564-mt5mtgj811opr3rgev6si0ci7079rvsd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sinopacific.vici"
               }
             }
           ]
@@ -68,10 +104,10 @@
               "client_type": 3
             },
             {
-              "client_id": "1097482483564-q407rsdtjepbrf3lm6a8qic0cobcqsl5.apps.googleusercontent.com",
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.sinopacific.witigps"
+                "bundle_id": "com.sinopacific.vici"
               }
             }
           ]
@@ -104,10 +140,10 @@
               "client_type": 3
             },
             {
-              "client_id": "1097482483564-q407rsdtjepbrf3lm6a8qic0cobcqsl5.apps.googleusercontent.com",
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.sinopacific.witigps"
+                "bundle_id": "com.sinopacific.vici"
               }
             }
           ]
@@ -140,10 +176,10 @@
               "client_type": 3
             },
             {
-              "client_id": "1097482483564-q407rsdtjepbrf3lm6a8qic0cobcqsl5.apps.googleusercontent.com",
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.sinopacific.witigps"
+                "bundle_id": "com.sinopacific.vici"
               }
             }
           ]
@@ -176,10 +212,10 @@
               "client_type": 3
             },
             {
-              "client_id": "1097482483564-q407rsdtjepbrf3lm6a8qic0cobcqsl5.apps.googleusercontent.com",
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.sinopacific.witigps"
+                "bundle_id": "com.sinopacific.vici"
               }
             }
           ]
@@ -212,10 +248,10 @@
               "client_type": 3
             },
             {
-              "client_id": "1097482483564-q407rsdtjepbrf3lm6a8qic0cobcqsl5.apps.googleusercontent.com",
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.sinopacific.witigps"
+                "bundle_id": "com.sinopacific.vici"
               }
             }
           ]
@@ -248,10 +284,10 @@
               "client_type": 3
             },
             {
-              "client_id": "1097482483564-q407rsdtjepbrf3lm6a8qic0cobcqsl5.apps.googleusercontent.com",
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.sinopacific.witigps"
+                "bundle_id": "com.sinopacific.vici"
               }
             }
           ]
@@ -284,10 +320,10 @@
               "client_type": 3
             },
             {
-              "client_id": "1097482483564-q407rsdtjepbrf3lm6a8qic0cobcqsl5.apps.googleusercontent.com",
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.sinopacific.witigps"
+                "bundle_id": "com.sinopacific.vici"
               }
             }
           ]
@@ -320,10 +356,10 @@
               "client_type": 3
             },
             {
-              "client_id": "1097482483564-q407rsdtjepbrf3lm6a8qic0cobcqsl5.apps.googleusercontent.com",
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.sinopacific.witigps"
+                "bundle_id": "com.sinopacific.vici"
               }
             }
           ]
@@ -356,10 +392,10 @@
               "client_type": 3
             },
             {
-              "client_id": "1097482483564-q407rsdtjepbrf3lm6a8qic0cobcqsl5.apps.googleusercontent.com",
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.sinopacific.witigps"
+                "bundle_id": "com.sinopacific.vici"
               }
             }
           ]
@@ -392,10 +428,10 @@
               "client_type": 3
             },
             {
-              "client_id": "1097482483564-q407rsdtjepbrf3lm6a8qic0cobcqsl5.apps.googleusercontent.com",
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.sinopacific.witigps"
+                "bundle_id": "com.sinopacific.vici"
               }
             }
           ]
@@ -428,10 +464,10 @@
               "client_type": 3
             },
             {
-              "client_id": "1097482483564-q407rsdtjepbrf3lm6a8qic0cobcqsl5.apps.googleusercontent.com",
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.sinopacific.witigps"
+                "bundle_id": "com.sinopacific.vici"
               }
             }
           ]
@@ -464,10 +500,46 @@
               "client_type": 3
             },
             {
-              "client_id": "1097482483564-q407rsdtjepbrf3lm6a8qic0cobcqsl5.apps.googleusercontent.com",
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.sinopacific.witigps"
+                "bundle_id": "com.sinopacific.vici"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097482483564:android:496be008fb09739c8d2549",
+        "android_client_info": {
+          "package_name": "com.sinopacific.vici"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097482483564-mt5mtgj811opr3rgev6si0ci7079rvsd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhjlBAHlTG35_oOSom77Oci0LMJsgoEZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097482483564-mt5mtgj811opr3rgev6si0ci7079rvsd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sinopacific.vici"
               }
             }
           ]
@@ -500,10 +572,10 @@
               "client_type": 3
             },
             {
-              "client_id": "1097482483564-q407rsdtjepbrf3lm6a8qic0cobcqsl5.apps.googleusercontent.com",
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.sinopacific.witigps"
+                "bundle_id": "com.sinopacific.vici"
               }
             }
           ]
@@ -536,10 +608,10 @@
               "client_type": 3
             },
             {
-              "client_id": "1097482483564-q407rsdtjepbrf3lm6a8qic0cobcqsl5.apps.googleusercontent.com",
+              "client_id": "1097482483564-toake5mo51m2hd71aql9cmsmarku42e8.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.sinopacific.witigps"
+                "bundle_id": "com.sinopacific.vici"
               }
             }
           ]

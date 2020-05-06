@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget 
-  version="1.0.31"
-  android-versionCode="14"
-  ios-CFBundleVersion="14"
-  id="com.quiktrak.pro"
+  version="1.0.0"
+  android-versionCode="1"
+  ios-CFBundleVersion="1"
+  id="com.boatwatch.pro"
   xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" defaultlocale="en-US" >
   <!-- id="com.quiktrak.plus" -->
-    <name>QuikTrak Pro</name>
+    <name>BoatWatch Pro</name>
     <description>
-       QuikTrak Pro GPS tracker
+       BoatWatch Pro GPS tracker
     </description>
     <author email="support@sinopacific.co" href="http://sinopacific.co">
        Sinopacific Co Limited

@@ -80,7 +80,36 @@ let Protocol = {
             iconAnchor:   [16, 31], // point of the icon which will correspond to marker's location
             popupAnchor:  [0, -32] // point from which the popup should open relative to the iconAnchor
         }),
-        
+        L.icon({
+            iconUrl: 'resources/images/markers/pin-geo-out.svg',
+            iconSize:     [32, 32], // size of the icon
+            iconAnchor:   [16, 31], // point of the icon which will correspond to marker's location
+            popupAnchor:  [0, -32] // point from which the popup should open relative to the iconAnchor
+        }),
+        L.icon({
+            iconUrl: 'resources/images/markers/pin-acc-on-boat.svg',
+            iconSize:     [32, 32], // size of the icon
+            iconAnchor:   [16, 31], // point of the icon which will correspond to marker's location
+            popupAnchor:  [0, -32] // point from which the popup should open relative to the iconAnchor
+        }),
+        L.icon({
+            iconUrl: 'resources/images/markers/pin-acc-off-boat.svg',
+            iconSize:     [32, 32], // size of the icon
+            iconAnchor:   [16, 31], // point of the icon which will correspond to marker's location
+            popupAnchor:  [0, -32] // point from which the popup should open relative to the iconAnchor
+        }),
+        L.icon({
+            iconUrl: 'resources/images/markers/pin-moving-boat.svg',
+            iconSize:     [32, 32], // size of the icon
+            iconAnchor:   [16, 31], // point of the icon which will correspond to marker's location
+            popupAnchor:  [0, -32] // point from which the popup should open relative to the iconAnchor
+        }),
+        L.icon({
+            iconUrl: 'resources/images/markers/pin-stopped-boat.svg',
+            iconSize:     [32, 32], // size of the icon
+            iconAnchor:   [16, 31], // point of the icon which will correspond to marker's location
+            popupAnchor:  [0, -32] // point from which the popup should open relative to the iconAnchor
+        }),
     ],
     TrackingInterval: [
         {
