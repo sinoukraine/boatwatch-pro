@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget 
-  version="1.0.0"
-  android-versionCode="1"
-  ios-CFBundleVersion="1"
+  version="1.0.1"
+  android-versionCode="2"
+  ios-CFBundleVersion="2"
   id="com.boatwatch.pro"
   xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" defaultlocale="en-US" >
-  <!-- id="com.quiktrak.plus" -->
+
     <name>BoatWatch Pro</name>
     <description>
        BoatWatch Pro GPS tracker
@@ -15,7 +15,7 @@
     </author>
     <content src="index.html" />
     <access origin="*"  allows-arbitrary-loads-for-media='true' allows-arbitrary-loads-in-web-content='true' allows-local-networking='true' />
-    
+    <allow-navigation href="http://localhost:8080/*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -38,7 +38,7 @@
 	<preference name="android-build-tool" value="gradle" />
     <preference name="loadUrlTimeoutValue" value="700000" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="Orientation" value="portrait" />
+    <preference name="Orientation" value="default" />
     <preference name="android-minSdkVersion" value="19" />
     <!-- <preference name="android-maxSdkVersion" value="27" /> -->
     <preference name="android-targetSdkVersion" value="28" />
@@ -49,15 +49,13 @@
     <preference name="phonegap-version" value="cli-9.0.0" />
     <!-- <preference name="Fullscreen" value="true" /> -->
 
-    <!-- <platform name="ios">
-        <preference name="WKWebViewOnly" value="true" />
-    
+    <platform name="ios">
+        <preference name="WKWebViewOnly" value="true" />    
         <feature name="CDVWKWebViewEngine">
             <param name="ios-package" value="CDVWKWebViewEngine" />
-        </feature>
-    
+        </feature>    
         <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
-    </platform> -->
+    </platform>
 
        
     <plugin name="phonegap-plugin-push" source="npm" spec="2.3.0">
@@ -78,10 +76,15 @@
     <plugin name="cordova-plugin-whitelist" source="npm" spec="1.2.1" />
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="5.0.2" />
     <plugin name="cordova-plugin-camera" source="npm" spec="4.0.3"  />
-    <plugin spec="https://github.com/phonegap/phonegap-mobile-accessibility.git" source="git" />
+    <plugin name="phonegap-plugin-mobile-accessibility" spec="~1.0.5" />
     <plugin name="cordova-launch-review" source="npm" spec="3.1.1" />
-    <plugin name="cordova-plugin-inappbrowser" source="npm" spec="3.0.0"  />
-    <!-- <plugin name="cordova-plugin-wkwebview-engine" source="npm" spec="1.2.1"  /> -->
+    <!-- <plugin name="cordova-plugin-inappbrowser" source="npm" spec="3.0.0"  /> -->
+    <plugin name="cordova-plugin-wkwebview-engine" source="npm" spec="1.2.1"  />
+    <plugin name="cordova-plugin-wkwebview-file-xhr" source="npm" spec="2.1.4"  />
+
+    <plugin name="uk.co.workingedge.phonegap.plugin.istablet" source="npm" spec="1.2.0"  />
+    <plugin name="cordova-plugin-screen-orientation" source="npm" spec="3.0.2"  />
+    <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" spec="5.0.4"  />
     
     
 
@@ -94,9 +97,9 @@
     <edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
         <string>Need photo library access to save pictures there</string>
     </edit-config>
-    <config-file platform="ios" target="*-Info.plist" parent="ITSAppUsesNonExemptEncryption">
+    <edit-config platform="ios" file="*-Info.plist" target="ITSAppUsesNonExemptEncryption">
         <false/>
-    </config-file>  
+    </edit-config> 
 
 
     <platform name="android">

@@ -190,7 +190,9 @@ const app = new Framework7({
             this.progressbar.show('custom');
         },
         routerAjaxComplete: function () {
-            this.progressbar.hide();
+            this.utils.nextTick(()=>{
+                this.progressbar.hide();
+            });
         },
         connection: function(isOnline){
             let self = this;
@@ -216,6 +218,12 @@ const app = new Framework7({
                 }
                 if (StatusBar) {
                     StatusBar.styleDefault();
+                }
+
+                if(window.isTablet){
+                    screen.orientation.unlock('any');
+                }else{
+                    screen.orientation.lock('portrait');
                 }
 
                 self.methods.handleAndroidBackButton();
@@ -341,6 +349,9 @@ const app = new Framework7({
                 if (!localStorage.PUSH_MOBILE_TOKEN) {
                     localStorage.PUSH_MOBILE_TOKEN = uid;
                 }
+                if (!localStorage.PUSH_DEVICE_TOKEN) {
+                    localStorage.PUSH_DEVICE_TOKEN = uid;
+                }
                 localStorage.PUSH_APP_KEY = BuildInfo.packageName;
                 localStorage.PUSH_APPID_ID = BuildInfo.packageName;
                 localStorage.DEVICE_TYPE = self.device.ios ? 'iOS' : 'android';
@@ -352,8 +363,8 @@ const app = new Framework7({
                 if (!localStorage.PUSH_DEVICE_TOKEN)
                     localStorage.PUSH_DEVICE_TOKEN = uid;
                 //localStorage.PUSH_DEVICE_TOKEN = "75ba1639-92ae-0c4c-d423-4fad1e48a49d"
-                localStorage.PUSH_APPID_ID = 'android.app.quiktrak.eu.quiktrak.new';
-                localStorage.DEVICE_TYPE = "android.app.quiktrak.eu.quiktrak.new";
+                localStorage.PUSH_APPID_ID = 'android.app.quiktrak.eu.baotwatch.pro';
+                localStorage.DEVICE_TYPE = "android.app.quiktrak.eu.baotwatch.pro";
             }
         },
         clearUserInfo: function(unregisterPush){
@@ -419,6 +430,7 @@ const app = new Framework7({
 
 
             self.methods.clearUserInfo();
+            self.methods.unregisterPush();
             self.loginScreen.open('.login-screen');
 
         },
@@ -1414,7 +1426,7 @@ const app = new Framework7({
                     Icon: 'icon-live-acc text-color-green f7-icons',
                     IconColor: 'text-color-green',
                     /*IconHTML:   `<div class='icon-container text-align-center text-color-white bg-color-green display-flex align-items-center justify-content-center'>
-                                    <i class='f7-icons size-16 line-height-icon-fix icon-live-acc '></i> 
+                                    <i class='f7-icons size-16 line-height-icon-fix icon-live-acc '></i>
                                 </div>`,*/
                 },
                 {
@@ -1424,7 +1436,7 @@ const app = new Framework7({
                     Icon: 'icon-live-stopped text-color-gray f7-icons',
                     IconColor: 'text-color-gray',
                     /*IconHTML:   `<div class='icon-container text-align-center text-color-white bg-color-gray display-flex align-items-center justify-content-center'>
-                                    <i class='f7-icons size-16 line-height-icon-fix icon-live-stopped '></i> 
+                                    <i class='f7-icons size-16 line-height-icon-fix icon-live-stopped '></i>
                                 </div>`,*/
                 },
                 {
@@ -1434,7 +1446,7 @@ const app = new Framework7({
                     Icon: 'icon-menu-geofence text-color-green f7-icons',
                     IconColor: 'text-color-green',
                     /*IconHTML:   `<div class='icon-container text-align-center text-color-white bg-color-green display-flex align-items-center justify-content-center'>
-                                    <i class='f7-icons size-16 line-height-icon-fix icon-menu-geofence '></i> 
+                                    <i class='f7-icons size-16 line-height-icon-fix icon-menu-geofence '></i>
                                 </div>`,*/
                 },
                 {
@@ -1444,7 +1456,7 @@ const app = new Framework7({
                     Icon: 'icon-menu-geofence text-color-red f7-icons',
                     IconColor: 'text-color-red',
                     /*IconHTML:   `<div class='icon-container text-align-center text-color-white bg-color-red display-flex align-items-center justify-content-center'>
-                                    <i class='f7-icons size-16 line-height-icon-fix icon-menu-geofence '></i> 
+                                    <i class='f7-icons size-16 line-height-icon-fix icon-menu-geofence '></i>
                                 </div>`,*/
                 },
                 {
@@ -1454,7 +1466,7 @@ const app = new Framework7({
                     Icon: 'icon-header-alarm text-color-red f7-icons',
                     IconColor: 'text-color-red',
                     /*IconHTML:   `<div class='icon-container text-align-center text-color-white bg-color-red display-flex align-items-center justify-content-center'>
-                                    <i class='f7-icons size-16 line-height-icon-fix icon-header-alarm '></i> 
+                                    <i class='f7-icons size-16 line-height-icon-fix icon-header-alarm '></i>
                                 </div>`,*/
                 },
             ];
@@ -2785,22 +2797,23 @@ $$('body').on('click', '.routeButton', function(){
     let that = $$(this);
     let lat = that.data('lat');
     let lng = that.data('lng');
-    if (lat && lng) {
-        let href = API_URL.URL_ROUTE;
+    if (lat && lng && launchnavigator) {
+        launchnavigator.navigate([lat,lng]);
+        /*let href = API_URL.URL_ROUTE;
         if (app.device.ios){
             href = API_URL.URL_ROUTE_IOS;
         }
         href = href.format(encodeURIComponent(lat), encodeURIComponent(lng));
 
         if (app.device.ios){
-            window.open(href, '_blank', 'location=yes');
+            window.open(href, '_blank', 'location=yes,usewkwebview=yes');
         }else{
             if (typeof navigator !== "undefined" && navigator.app) {
                 navigator.app.loadUrl(href, { openExternal: true });
             } else {
                 window.open(href, '_blank');
             }
-        }
+        }*/
     }
 });
 
